@@ -1,0 +1,8 @@
+prueba
+reto
+.DS_Store
+
+# dotfiles
+.*
+!.gitignore
+git
