@@ -1,6 +1,9 @@
 # Manifest configuracion
 
 {
-    'name': "Guia modulos",
+    'name': "guia",
+    'data': [
+        'security/ir.model.access.csv'
+    ], 
 
 }
