@@ -6,11 +6,11 @@ class basic(models.Model):
      _name = 'basic.basic'
      _description = 'Basic model test'
 
-     name = fields.Char()
+     name = fields.Char(required=True)
      description = fields.Text()
      postcode = fields.Char()
      date_availability = fields.Datetime()
-     expected_price = fields.Float()
+     expected_price = fields.Float(required=True)
      selling_price = fields.Float()
      bedrooms = fields.Integer()
      living_area = fields.Integer()

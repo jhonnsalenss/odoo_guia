@@ -26,3 +26,7 @@ Modulo de prueba desde cero
             garden              Boolean
             garden_area         Integer
             garden_orientation  Selection (4 valores, Este oeste norte sud)
+    Ejercicio 4
+        Crear campos
+        name            required
+        expected_price  required
