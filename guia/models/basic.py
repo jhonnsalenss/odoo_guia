@@ -3,7 +3,7 @@
 from odoo import fields, models
 
 class basic(models.Model):
-     _name = 'basic.basic'
+     _name = 'basic.model'
      _description = 'Basic model test'
 
      name = fields.Char(required=True)
