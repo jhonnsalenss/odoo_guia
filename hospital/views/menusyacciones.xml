@@ -1,27 +1,11 @@
 <odoo>
-    <record id="action_list_especialidad" model="ir.actions.act_window">
-        <field name="name">Especialidades del hospital</field>
-        <field name="res_model">especialidad.hospital</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-<!--
-    <record id="action_list_doctor" model="ir.actions.act_window">
-        <field name="name">Doctor del hospital</field>
-        <field name="res_model">doctor.hospital</field>
-        <field name="view_model">tree,form</field>
-    </record>
 
     <record id="action_list_cita" model="ir.actions.act_window">
         <field name="name">Citas del hospital</field>
         <field name="res_model">cita.hospital</field>
-        <field name="view_model">tree,form</field>
-    </record>
-
-    <record id="action_list_paciente" model="ir.actions.act_window">
-        <field name="name">Lista de pacientes</field>
-        <field name="res_model">paciente.hospital</field>
         <field name="view_mode">tree,form</field>
     </record>
+
 
     <record id="action_list_sala" model="ir.actions.act_window">
         <field name="name">Salas de hospital</field>
@@ -29,20 +13,9 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <record id="action_list_registro" model="ir.actions.act_window">
-        <field name="name">Registro de clientes</field>
-        <field name="res_model">registro.model</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-    -->
-<!--
-    <menuitem id="menu_principal" name="Registros del hospital"/>
+    <menuitem id="menu_principal" name="Menu principal del hospital"/>
     <menuitem id="menu_principal_registros" name="Registros" parent="menu_principal"/>
-    <menuitem id="menu_principal_cita" name="Citas hospital" parent="menu_principal" action="action_list_cita"/>
-    <menuitem id="menu_principal_doctor" name="Doctores hospital" parent="menu_principal" action="action_list_doctor"/>
-    <menuitem id="menu_principal_especialidad" name="Especialidades hospital" parent="menu_principal" action="action_list_especialidad"/>
-    <menuitem id="menu_principal_paciente" name="Paciente hospital" parent="menu_principal" action="action_list_paciente"/>
-    <menuitem id="menu_principal_registro" name="Registros hospital" parent="menu_principal" action="action_list_registro"/>
-    <menuitem id="menu_principal_sala" name="Salas hospital" parent="menu_principal" action="action_list_sala"/>
--->
+    <menuitem id="menu_citas" name="Citas hospital" parent="menu_principal_registros" action="action_list_cita"/>
+    <menuitem id="menu_sala" name="Salas del hospital" parent="menu_principal_registros" action="action_list_sala"/>
+
 </odoo>

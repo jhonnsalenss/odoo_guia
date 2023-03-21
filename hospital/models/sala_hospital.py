@@ -6,4 +6,5 @@ class SalaHospital(models.Model):
 
     nombre = fields.Char(string="Numero de sala del hospital", required=True)
     ubicacion = fields.Char(string="Ubicacion de la sala")
-    id_cita_sala = fields.One2many('cita.hospital','id_sala_cita',string="Citas de la sala")
+#    id_cita_sala = fields.One2many('cita.hospital','id_sala_cita',string="Citas de la sala")
+    
