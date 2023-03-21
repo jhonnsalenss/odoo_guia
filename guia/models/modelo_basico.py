@@ -11,7 +11,7 @@ class ModeloBasico(models.Model):
      postcode = fields.Char()
      date_availability = fields.Datetime()
      expected_price = fields.Float(required=True)
-     selling_price = fields.Float()
+     selling_price = fields.Float(readonly=True)
      bedrooms = fields.Integer()
      living_area = fields.Integer()
      facades = fields.Integer()
