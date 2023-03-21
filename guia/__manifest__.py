@@ -1,10 +1,10 @@
 # Manifest configuracion
 
 {
-    'name': "guia",
+    'name': "Guia desarrollo odoo",
     'data': [
-#        'security/ir.model.access.csv',
-#        'views/basic_model_views.xml',
+        'security/ir.model.access.csv',
+        'views/modelo_basico_views.xml',
     ], 
 
 }

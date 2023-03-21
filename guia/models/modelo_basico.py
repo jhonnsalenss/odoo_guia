@@ -2,9 +2,9 @@
 
 from odoo import fields, models
 
-class basic(models.Model):
-     _name = 'basic.model'
-     _description = 'Basic model test'
+class ModeloBasico(models.Model):
+     _name = 'modelo.basico'
+     _description = 'Ejemplo de modelo basico'
 
      name = fields.Char(required=True)
      description = fields.Text()
