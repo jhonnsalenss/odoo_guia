@@ -1,8 +1,0 @@
-<odoo>
-
-    <menuitem id="menu_tienda" name="Tienda"/>
-    <menuitem id="menu_administrar" name="Administrar" parent="menu_tienda"/>
-    <menuitem id="menu_ventas" name="Ventas" parent="menu_administrar" action="action_tienda_ventas" />
-    <menuitem id="menu_compras" name="Compras" parent="menu_administrar"/>
-
-</odoo>

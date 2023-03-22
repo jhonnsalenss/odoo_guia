@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="view_modelo_tienda_form" model="ir.ui.view">
-        <field name="name">modelo.tienda.form</field>
-        <field name="model">modelo.tienda</field>
+    <record id="view_modelo_venta_form" model="ir.ui.view">
+        <field name="name">modelo.venta.form</field>
+        <field name="model">modelo.venta</field>
         <field name="arch" type="xml">
-            <form string="Formulario Tienda">
+            <form string="Formulario Venta">
                 <sheet>
                     <group >
+                        <field name="id_cliente"></field>
+                        <field name="reference"></field>
                         <field name="name" string="Nombre de cliente"></field>
                         <field name="description" string="Descripcion cliente"></field>
-                        <field name="postcode"></field>                    
                     </group>
                     <group name="name" string="Grupo 2">
-                        <field name="date_availability"></field>
-                        <field name="expected_price"></field>
+                        <field name="date"></field>
+                        <field name="price"></field>
+                    </group>
+                    <group name="name" string="grupo 3">
+                        <button name="action_test" string="object Button" type="object" class="oe_highlight"/>
+                        <button name="%(guia.action_tienda_cliente)d" string="Action Button" type="action" class="oe_highlight"/>
                     </group>
                 </sheet>
             </form>
@@ -37,10 +42,10 @@
 
 -->
 
-    <record id="action_tienda_ventas" model="ir.actions.act_window">
-    <field name="name">Administrar</field>
-    <field name="res_model">modelo.tienda</field>
-    <field name="view_mode">tree,form</field>
+    <record id="action_tienda_venta" model="ir.actions.act_window">
+        <field name="name">Venta</field>
+        <field name="res_model">modelo.venta</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
 </odoo>
