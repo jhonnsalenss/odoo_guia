@@ -6,13 +6,14 @@ class ModeloBasico(models.Model):
      _name = 'modelo.basico'
      _description = 'Ejemplo de modelo basico'
 
-     name = fields.Char(required=True)
+     name = fields.Char(required=True, default="Unknown")
      description = fields.Text()
+'''
      postcode = fields.Char()
-     date_availability = fields.Datetime()
+     date_availability = fields.Datetime(copy=False)
      expected_price = fields.Float(required=True)
-     selling_price = fields.Float(readonly=True)
-     bedrooms = fields.Integer()
+     selling_price = fields.Float(readonly=True,copy=False)
+     bedrooms = fields.Integer(default="2")
      living_area = fields.Integer()
      facades = fields.Integer()
      garage = fields.Boolean()
@@ -24,4 +25,6 @@ class ModeloBasico(models.Model):
           ('East','LabelEast'),
           ('West','LabelWest')
           ])
-     
+     last_seen = fields.Datetime("Last Seen", default=lambda self: fields.Datetime.now())
+
+'''

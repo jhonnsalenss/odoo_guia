@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_modelo_basico,access_modelo_basico,model_modelo_basico,base.group_user,1,1,1,1
+access_modelo_tienda,access_modelo_tienda,model_modelo_tienda,base.group_user,1,1,1,1
+access_modelo_cliente,access_modelo_cliente,model_modelo_cliente,base.group_user,1,1,1,1

@@ -1,12 +1,22 @@
 <odoo>
+
   <record id="modelo_basico_action" model="ir.actions.act_window">
     <field name="name">Accion de un modelo basico</field>
     <field name="res_model">modelo.basico</field>
     <field name="view_mode">tree,form</field>
   </record>
 
+<!--
   <menuitem id="menu_basico" name="Principal"/>
   <menuitem id="menu_primer_nivel" name="Primer nivel" parent="menu_basico"/>
   <menuitem id="menu_segundo_nivel" name="Segundo nivel" parent="menu_primer_nivel" action="modelo_basico_action"/>
+-->
+<!--
+  <menuitem id="menu_basico" name="Principal">
+    <menuitem id="menu_primer_nivel" name="Primer nivel">
+      <menuitem id="menu_segundo_nivel" name="Segundo nivel" action="modelo_basico_action"/>
+    </menuitem>
+  </menuitem>
+-->
 
 </odoo>
