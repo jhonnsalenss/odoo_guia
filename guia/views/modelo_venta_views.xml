@@ -18,8 +18,8 @@
                         <field name="price"></field>
                     </group>
                     <group name="name" string="grupo 3">
-                        <button name="action_test" string="object Button" type="object" class="oe_highlight"/>
-                        <button name="%(guia.action_tienda_cliente)d" string="Action Button" type="action" class="oe_highlight"/>
+                        <button name="action_test" string="object Button" confirm="Esta seguro de ejecturar codigo python?" type="object" class="oe_highlight"/>
+                        <button name="%(guia.action_tienda_cliente)d" string="Action Button" confirm="Esta seguro de abrir accion de cliente?" type="action" class="oe_highlight"/>
                     </group>
                 </sheet>
             </form>
